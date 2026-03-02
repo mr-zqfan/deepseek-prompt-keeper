@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DeepSeek Prompt Keeper 设置</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 20px; }
+    .setting-item {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    select, input[type="checkbox"] {
+      padding: 6px;
+    }
+    button {
+      padding: 8px 16px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .status {
+      margin-top: 16px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚙️ DeepSeek Prompt Keeper 设置</h1>
+  <div class="setting-item">
+    <label for="theme">主题</label>
+    <select id="theme">
+      <option value="light">浅色</option>
+      <option value="dark">深色</option>
+    </select>
+  </div>
+  <div class="setting-item">
+    <label for="position">侧边栏位置</label>
+    <select id="position">
+      <option value="right">右侧</option>
+      <option value="left">左侧</option>
+    </select>
+  </div>
+  <div class="setting-item">
+    <label>
+      <input type="checkbox" id="autoInsert"> 插入后自动关闭侧边栏
+    </label>
+  </div>
+  <button id="save">保存设置</button>
+  <div class="status" id="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
